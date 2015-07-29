@@ -1,0 +1,13 @@
+com\distributedcomputing\WorkerCommunicator.class
+com\distributedcomputing\Worker$1.class
+com\distributedcomputing\App.class
+com\distributedcomputing\DistributedWorkManager$2.class
+com\distributedcomputing\Worker.class
+com\distributedcomputing\WorkerCommunicator$WorkerCommunicatorCallback.class
+com\distributedcomputing\DistributedWorkManager$1.class
+com\distributedcomputing\WorkerCommunicator$1.class
+com\distributedcomputing\TaskPipeline.class
+com\distributedcomputing\Configuration.class
+com\distributedcomputing\DistributedWorkManager.class
+com\distributedcomputing\WorkerConfig.class
+com\distributedcomputing\TaskData.class
