@@ -7,7 +7,8 @@ import org.json.JSONObject;
 
 /**
  * This is an example class that explains how to override the TaskPipeline and implement a custom data processing job
- * In this simple example, we will generate a list of numbers, and multiply each number by 2. Then we will print the list of results
+ * In this simple example, we will generate a list of numbers, and "process the data" by multiplying each number by 2
+ * Then, we will print the results
  * In actual usage, the processing will be more complex and time consuming. This is just an easy to understand example :)
  */
 public class MultiplyByTwo extends TaskPipeline {
@@ -15,7 +16,7 @@ public class MultiplyByTwo extends TaskPipeline {
     private ArrayList<JSONObject> results = new ArrayList<JSONObject>();
 
     /**
-     * Override this function to input all data for the analysis
+     * Override this function to input all data for processing
      */
     public void inputTaskData() {
 
@@ -24,7 +25,7 @@ public class MultiplyByTwo extends TaskPipeline {
             JSONObject foo = new JSONObject();
             foo.put("number", i);
             
-            // call this function to add data for analysis
+            // call this function to add data for processing
             addData(foo);
         }
         // call this function after adding all data
@@ -32,7 +33,7 @@ public class MultiplyByTwo extends TaskPipeline {
     }
 
     /**
-     * Override this function to specify the analysis to perform on the data
+     * Override this function to specify the processing to perform on the data
      * This code will run on each worker machine
      */
     public JSONObject executeTask(JSONObject taskData) {
