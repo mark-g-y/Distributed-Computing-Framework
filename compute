@@ -1,0 +1,3 @@
+args="$@"
+dir=`dirname $0`
+java -cp "${dir}/lib/*;${dir}/target/*" com.distributedcomputing.App $args
